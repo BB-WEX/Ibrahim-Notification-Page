@@ -19,6 +19,8 @@ body {
     width: 600px;
     height: 800px;
     padding: 2rem;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .Page .Head {
@@ -59,7 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 500px;
+    height:680px;
 }
 
 .Notif{
