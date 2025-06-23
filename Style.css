@@ -1,0 +1,119 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.Page {
+    background-color: white;
+    border-radius: 15px;
+    width: 600px;
+    height: 800px;
+    padding: 2rem;
+}
+
+.Page .Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.Page .Head h1 {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.Counter {
+    background-color: rgb(4, 4, 140);
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    font-size: 16px;
+    width: 30px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.AllReadBtn {
+    background-color: transparent;
+    color: gray;
+    border: none;
+    height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.NotifContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.Notif{
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    background-color: rgb(243, 248, 255);
+    width: 560px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Notif img{
+    background-color: gainsboro;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.Notif .Content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.Content .Text{
+    display: flex;
+    align-items: center;
+}
+
+.Text .Name{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.Text .Main{
+    color: rgb(128, 128, 128);
+    margin-right: 5px;
+}
+
+.Text .Subject {
+    color:  rgb(128, 128, 128);
+    font-weight: bold;
+}
+
+.Notif .Time {
+    color: rgb(128, 128, 128);
+}
+
+.Notif .NotifDot {
+    background-color: rgb(253, 146, 146);
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+}
