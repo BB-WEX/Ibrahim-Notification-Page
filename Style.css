@@ -164,16 +164,16 @@ body {
 
 .PostImg{
     display: flex;
-    max-width: 240px;
     justify-content: end;
+    align-items: end;
+    max-width: 400px;
     margin-bottom: -40px;
 }
 
 .PostImg img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-    justify-items: right;
 }
 
 .UnRead {
@@ -184,11 +184,15 @@ body {
     display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 550px) {
     .p-container{
         row-gap: 0px;
     }
     .PostImg{
-        margin-top: -5px;
+        margin-left: 80%;
+        margin-top: -2%;
+    }
+    .NotifContainer{
+        margin-left: -20px;
     }
 }
