@@ -56,7 +56,7 @@ body {
     cursor: pointer;
 }
 
-.AllReadBtn:hover{
+.AllReadBtn:hover {
     color: rgb(139, 149, 206);
 }
 
@@ -64,62 +64,63 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:800px;
+    height: 800px;
 }
 
-.Notif{
+.Notif {
     display: flex;
     align-items: center;
     line-height: 0px;
     background-color: white;
-    width: 560px;
+    max-width:560px;
     height: 60px;
     padding: 20px;
     border-radius: 10px;
 }
 
-.Notif .Profile{
+.Notif .Profile {
     background-color: gainsboro;
     align-self: start;
-    border-radius: 100%;
+    clip-path: circle();
     width: 60px;
     height: 60px;
 }
 
-.Notif .Content{
+.Notif .Content {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
-.Content .Text{
+.Content .Text {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 600px;
+
 }
 
-.Text .Name{
+.Text .Name {
     font-weight: bold;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.Text .Name:hover{
+.Text .Name:hover {
     color: rgb(89, 89, 255);
 }
 
-.Text .Main{
+.Text .Main {
     color: rgb(128, 128, 128);
     margin-right: 5px;
 }
 
 .Text .Subject {
-    color:  rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
     font-weight: bold;
     cursor: pointer;
 }
 
-.Text .Subject:hover{
+.Text .Subject:hover {
     color: rgb(89, 89, 255);
 }
 
@@ -127,16 +128,17 @@ body {
     color: rgb(128, 128, 128);
 }
 
-.Notif .Message{
+.Notif .Message {
     border: whitesmoke 2px solid;
     border-radius: 10px;
     padding: 8px;
-    width: 500px;
-    height:80px;
+    max-width: 500px;
+    max-height: 90px;
     line-height: 20px;
+    cursor: pointer;
 }
 
-.Notif .Message:hover{
+.Notif .Message:hover {
     background-color: rgba(139, 149, 206, 0.293);
 }
 
@@ -149,22 +151,35 @@ body {
     margin-left: 10px;
 }
 
-.HasMessage{
+.HasMessage {
     height: fit-content;
 }
 
+
 .PostImg{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    cursor: pointer;
+    display: flex;
+    max-width: 240px;
+    justify-content: end;
+    margin-bottom: -40px;
 }
 
-.UnRead{
+.PostImg img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    justify-items: right;
+}
+
+.UnRead {
     background-color: rgb(243, 248, 255);
 }
 
-.Notif.UnRead .NotifDot{
+.Notif.UnRead .NotifDot {
     display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .Page{
+        width: 450px;
+    }
 }
