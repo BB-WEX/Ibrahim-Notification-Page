@@ -57,6 +57,10 @@ body {
     cursor: pointer;
 }
 
+.AllReadBtn:hover{
+    color: rgb(139, 149, 206);
+}
+
 .NotifContainer {
     display: flex;
     flex-direction: column;
@@ -96,6 +100,11 @@ body {
 .Text .Name{
     font-weight: bold;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+.Text .Name:hover{
+    color: rgb(89, 89, 255);
 }
 
 .Text .Main{
@@ -106,6 +115,11 @@ body {
 .Text .Subject {
     color:  rgb(128, 128, 128);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.Text .Subject:hover{
+    color: rgb(89, 89, 255);
 }
 
 .Notif .Time {
@@ -128,4 +142,3 @@ body {
 .Notif.UnRead .NotifDot{
     display: block;
 }
-
