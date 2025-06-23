@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     line-height: 0px;
-    background-color: rgb(243, 248, 255);
+    background-color: white;
     width: 560px;
     height: 60px;
     padding: 20px;
@@ -113,9 +113,19 @@ body {
 }
 
 .Notif .NotifDot {
+    display: none;
     background-color: rgb(253, 146, 146);
     border-radius: 100%;
     width: 8px;
     height: 8px;
     margin-left: 10px;
 }
+
+.UnRead{
+    background-color: rgb(243, 248, 255);
+}
+
+.Notif.UnRead .NotifDot{
+    display: block;
+}
+

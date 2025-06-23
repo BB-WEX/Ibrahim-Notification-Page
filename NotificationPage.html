@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notifications</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
+    <script src="Script.js" defer></script>
 </head>
 
 <body>
@@ -14,12 +14,12 @@
         <div class="Head">
             <h1>
                 Notifications
-                <div class="Counter">1</div>
+                <div id="Counter" class="Counter">3</div>
             </h1>
-            <button class="AllReadBtn">Mark all as read</button>
+            <button onclick="MarkAllRead()" class="AllReadBtn">Mark all as read</button>
         </div>
         <div class="NotifContainer">
-            <div class="Notif">
+            <div id="Notif" class="Notif UnRead">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="Notif">
+            <div id="Notif" class="Notif UnRead">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="Notif">
+            <div id="Notif" class="Notif UnRead">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -57,11 +57,11 @@
                         <div class="NotifDot"></div>
                     </div>
                     <div class="Time">
-                        <p>1m ago</p>
+                        <p>1 day ago</p>
                     </div>
                 </div>
             </div>
-            <div class="Notif">
+            <div id="Notif" class="Notif">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -71,11 +71,11 @@
                         <div class="NotifDot"></div>
                     </div>
                     <div class="Time">
-                        <p>1m ago</p>
+                        <p>5 days ago</p>
                     </div>
                 </div>
             </div>
-            <div class="Notif">
+            <div id="Notif" class="Notif">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -85,11 +85,11 @@
                         <div class="NotifDot"></div>
                     </div>
                     <div class="Time">
-                        <p>1m ago</p>
+                        <p>1 week ago</p>
                     </div>
                 </div>
             </div>
-            <div class="Notif">
+            <div id="Notif" class="Notif">
                 <img src="" alt="">
                 <div class="Content">
                     <div class="Text">
@@ -99,7 +99,7 @@
                         <div class="NotifDot"></div>
                     </div>
                     <div class="Time">
-                        <p>1m ago</p>
+                        <p>2 weeks ago</p>
                     </div>
                 </div>
             </div>
