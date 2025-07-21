@@ -1,0 +1,198 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.Page {
+    background-color: white;
+    border-radius: 15px;
+    width: 600px;
+    height: 900px;
+    padding: 2rem;
+    scrollbar-width: none;
+}
+
+.Page .Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.Page .Head h1 {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.Counter {
+    background-color: rgb(4, 4, 140);
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    font-size: 16px;
+    width: 30px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.AllReadBtn {
+    background-color: transparent;
+    color: gray;
+    border: none;
+    height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.AllReadBtn:hover {
+    color: rgb(139, 149, 206);
+}
+
+.NotifContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 800px;
+}
+
+.Notif {
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    background-color: white;
+    max-width:560px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Notif .Profile {
+    background-color: gainsboro;
+    align-self: start;
+    clip-path: circle();
+    width: 60px;
+    height: 60px;
+}
+
+.Notif .Content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    row-gap: 0;
+}
+
+.Content .Text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.p-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.Text .Name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Text .Name:hover {
+    color: rgb(89, 89, 255);
+}
+
+.Text .Main {
+    color: rgb(128, 128, 128);
+}
+
+.Text .Subject {
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Text .Subject:hover {
+    color: rgb(89, 89, 255);
+}
+
+.Notif .Under {
+    color: rgb(128, 128, 128);
+}
+
+.Notif .Message {
+    border: whitesmoke 2px solid;
+    border-radius: 10px;
+    padding: 8px;
+    max-width: 500px;
+    max-height: 90px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.Notif .Message:hover {
+    background-color: rgba(139, 149, 206, 0.293);
+}
+
+.Notif .NotifDot {
+    display: none;
+    background-color: rgb(253, 146, 146);
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.HasMessage {
+    height: fit-content;
+}
+
+
+.PostImg{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    max-width: 400px;
+    margin-bottom: -40px;
+}
+
+.PostImg img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.UnRead {
+    background-color: rgb(243, 248, 255);
+}
+
+.Notif.UnRead .NotifDot {
+    display: block;
+}
+
+@media screen and (max-width: 550px) {
+    .p-container{
+        row-gap: 0px;
+    }
+    .PostImg{
+        margin-left: 80%;
+        margin-top: -2%;
+    }
+    .NotifContainer{
+        margin-left: -20px;
+    }
+}
